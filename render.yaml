@@ -1,0 +1,12 @@
+services:
+  
+type: web
+  name: email-survey-app
+  env: docker
+  dockerfilePath: ./Dockerfile
+  dockerContext: .
+  plan: free
+  autoDeploy: false
+  envVars:
+key: PORT
+    value: 8080
